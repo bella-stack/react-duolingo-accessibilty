@@ -22,7 +22,6 @@ const SideBar = () => {
         <ul>
           <li><Link to="/new-class">Explore.</Link></li>
           <li><Link to="/classroom">Classroom.</Link></li>
-          {/* <li><Link to="/profile">Progress.</Link></li> */}
           <li><Link to="/profile">Progress.</Link></li>
         </ul>
       </nav>
