@@ -1,0 +1,53 @@
+// VoiceToText.js
+import React, { useState, useEffect } from 'react';
+
+const VoiceToText = () => {
+  const [isListening, setIsListening] = useState(false);
+  const [transcript, setTranscript] = useState('');
+
+  useEffect(() => {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
+
+    recognition.continuous = true; // Keep listening even after voice is detected
+    recognition.interimResults = true; // Show interim results
+    recognition.lang = 'en-US'; // Set the language
+
+    recognition.onstart = () => {
+      console.log('Voice recognition activated. Start speaking...');
+    };
+    console.log("-----1");
+    console.log(recognition);
+
+    recognition.onresult = (event) => {
+        console.log("------2");
+      const transcriptArr = Array.from(event.results)
+        .map((result) => result[0])
+        .map((result) => result.transcript);
+      setTranscript(transcriptArr.join(' '));
+    };
+
+    recognition.onend = () => {
+      console.log('Voice recognition stopped.');
+    };
+
+    // Start or stop recognition based on `isListening`
+    if (isListening) {
+      recognition.start();
+    } else {
+      recognition.stop();
+    }
+    return () => recognition.stop();
+  }, [isListening]);
+
+  return (
+    <div >
+      <button onClick={() => setIsListening((prevState) => !prevState)}>
+        {isListening ? 'Stop Listening' : 'Start Listening'}
+      </button>
+      <p style={{ color: 'white' }}>{transcript}</p>
+    </div>
+  );
+};
+
+export default VoiceToText;
