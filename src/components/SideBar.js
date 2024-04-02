@@ -1,33 +1,26 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import '../styles/SideBar.css';
+import '../App.css'
 import { Link } from 'react-router-dom';
 
 const SideBar = () => {
-  let navigate = useNavigate();
-
-  const handleLogout = () => {
-    // Perform any logout logic here (e.g., clearing local storage, updating state)
-
-    navigate('/'); // Redirect to the login page
-  };
-
   return (
     <div className="sidebar">
-      <div className="profile-picture-container">
-                <img src="logo192.png" alt="Profile" className="profile-picture" width={120}/>
-      </div>
+      <Link to="/profile">
+        <div className="profile-picture-container">
+          <img src="profile.png" alt="Profile" className="profile-picture" width={120}/>
+        </div>
+      </Link>
 
       <nav>
         <ul>
-          <li><Link to="/new-class">Explore.</Link></li>
-          <li><Link to="/classroom">Classroom.</Link></li>
-          <li><Link to="/profile">Progress.</Link></li>
+          <li><Link to="/explore">Explore</Link></li>
+          <li><Link to="/classroom">Classroom</Link></li>
+          <li><Link to="/community">Community</Link></li>
         </ul>
       </nav>
 
       <div className="logout">
-        <a onClick={handleLogout} style={{cursor: 'pointer'}}>Log Out.</a>
+        <li><Link to="/login">LogOut</Link></li>
       </div>
     </div>
   );
