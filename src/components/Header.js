@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from '../ThemeContext'; // Update the path as necessary
+import { useTheme } from '../ThemeContext'; 
 
 const Header = () => {
   const { toggleTheme, theme } = useTheme();
@@ -9,10 +9,10 @@ const Header = () => {
 
   return (
     <div className={`header ${theme === 'dark' ? 'dark-mode' : ''}`}>
-      <div className="language">
+      <div className="header-button">
         <button onClick={changeLanguage}>Change Language</button>
       </div>
-      <div className="modes">
+      <div className="header-button">
         <button onClick={toggleTheme}>
           {theme === 'dark' ? "Light Mode" : "Dark Mode"}
         </button>

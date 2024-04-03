@@ -8,9 +8,9 @@ const Community = () => {
     <div>
         <Header />
         <SideBar />
-        <p>
-            Community : add friend??
-        </p>
+        <p>1. Community : add friend??</p>
+        <p>2. match language practice partner</p>
+        <p>3. AI chat practice bot</p>
 
     </div>
   );

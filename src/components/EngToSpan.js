@@ -1,4 +1,3 @@
-// In Classroom.js
 import React from 'react';
 import SideBar from './SideBar';
 import '../App.css'
@@ -24,14 +23,14 @@ const EngToSpan = () => {
             <div class="story">
                 <h2>English Story</h2>
                 <p id="story-text">
-                    Once upon a time, in a faraway land, there was a kingdom where the language of English was not just a means of communication, but a way to bring people together...
+                    Once upon a time, in a faraway land...
                 </p>
                 <button className="read-button" onClick={readText}>Read</button>
             </div>
             <div class="story">
                 <h2>Spanish Story</h2>
                 <p>
-                    Dianie
+                    Érase una vez, en una tierra lejana...
                 </p>
                 <button class="read-button">Read</button>
             </div>
