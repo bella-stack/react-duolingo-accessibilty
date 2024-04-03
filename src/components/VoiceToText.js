@@ -1,5 +1,5 @@
-// VoiceToText.js
 import React, { useState, useEffect } from 'react';
+import '../App.css'
 
 const VoiceToText = () => {
   const [isListening, setIsListening] = useState(false);
@@ -40,12 +40,12 @@ const VoiceToText = () => {
   }, [isListening]);
 
   return (
-    <div >
-      <button onClick={() => setIsListening((prevState) => !prevState)}>
-        {isListening ? 'Stop Listening' : 'Start Listening'}
-      </button>
-      <p style={{ color: 'white' }}>{transcript}</p>
-    </div>
+    <div>
+    <button className="read-button" onClick={() => setIsListening((prevState) => !prevState)}>
+      {isListening ? 'Stop Listening' : 'Start Listening'}
+    </button>
+    <p style={{ color: 'white' }}>{transcript}</p>
+  </div>
   );
 };
 

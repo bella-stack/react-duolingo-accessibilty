@@ -35,7 +35,7 @@ const HeartModel = () => {
 
     const loader = new GLTFLoader();
     loader.load('/models/heart_in_love/scene.gltf', gltf => {
-      gltf.scene.scale.set(0.01, 0.01, 0.01);
+      gltf.scene.scale.set(0.02, 0.02, 0.02);
       scene.add(gltf.scene);
       heartRef.current = gltf.scene;
     }, undefined, error => console.error('An error happened', error));

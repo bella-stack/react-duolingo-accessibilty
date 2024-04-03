@@ -1,17 +1,16 @@
 import React from 'react';
 import SideBar from '../components/SideBar';
 import Header from '../components/Header';
-import HeartModel from '../components/HeartModel'; 
 
 
 const Profile = () => {
   return (
-    <div className="content">
+    <div className="profile-content">
           <Header />
           <SideBar />
-          <p>
-              profile
-          </p>
+          <p>1. profile</p>
+          <p>2. story</p>
+          <p>3. we can use a picture or something here</p>
     </div>
   );
 };

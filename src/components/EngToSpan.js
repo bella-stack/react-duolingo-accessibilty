@@ -1,6 +1,6 @@
 import React from 'react';
 import SideBar from './SideBar';
-import '../App.css'
+import '../App.css';
 
 
 const EngToSpan = () => {
@@ -29,8 +29,8 @@ const EngToSpan = () => {
             </div>
             <div class="story">
                 <h2>Spanish Story</h2>
-                <p>
-                    Érase una vez, en una tierra lejana...
+                <p id="story-text2">
+                    Érase una vez, en una tierra lejana.....
                 </p>
                 <button class="read-button">Read</button>
             </div>
