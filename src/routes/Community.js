@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SideBar from '../components/SideBar';
 import Header from '../components/Header';
-import '../App.css'; // Assuming your CSS is here
+import '../App.css'; 
 
 const Community = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -27,6 +27,8 @@ const Community = () => {
             <p>1. Community: add friend??</p>
             <p>2. Match language practice partner</p>
             <p>3. AI chat practice bot</p>
+            <p>4. emergency call - prio - prevent from driving using</p>
+            <p>5. sleeping situation - apple health </p>
         </div>
     </div>
   );

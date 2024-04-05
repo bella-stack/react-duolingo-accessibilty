@@ -11,6 +11,7 @@ const Classroom = () => {
         <SideBar />
         <VoiceToText />
         <EngToSpan />
+        <VoiceToText />
     
         <p>1. Read</p>
         <p>2. Listen and check your pronciantion</p>

@@ -201,33 +201,32 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* This will center the container on the page */
-  min-height: 100vh; /* Use at least the full height of the viewport */
-  padding-top: 20px; /* Add top padding to avoid overlapping with the header */
+  justify-content: center; 
+  min-height: 100vh;
+  padding-top: 20px; 
 }
 
 .main-content {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: start; /* Align items to the start of the flex container */
-  flex-wrap: wrap; /* Wrap items if they don't fit in one row */
-  gap: 20px; /* Space between the class-container and heart-container */
-  width: 100%; /* Take the full width of the container */
-  max-width: 1200px; /* Adjust this to fit your desired max-width */
-  margin: 0 auto; /* This will center the content if it's narrower than the max-width */
+  justify-content: center; 
+  align-items: start; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 .class-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items in the class containers */
+  align-items: center; 
 }
 
 .class-container,
 .heart-container {
   padding: 0;
   margin: 0;
-  /* Your existing styles */
 }
 
 .class-preview {
