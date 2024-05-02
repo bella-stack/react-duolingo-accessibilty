@@ -1,21 +1,14 @@
 import React from 'react';
-import SideBar from '../components/SideBar';
 import EngToSpan from '../components/EngToSpan';
-import VoiceToText from '../components/VoiceToText';
-import Header from '../components/Header';
+import ClassroomHeader from '../components/ClassroomHeader';
+import '../App.css'; 
+
 
 const Classroom = () => {
   return (
     <div>
-        <Header />
-        <SideBar />
-        <VoiceToText />
+        <ClassroomHeader className="classroom-header" />
         <EngToSpan />
-        <VoiceToText />
-    
-        <p>1. Read</p>
-        <p>2. Listen and check your pronciantion</p>
-
     </div>
   );
 };
